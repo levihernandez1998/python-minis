@@ -10,7 +10,6 @@ def start_game():
 
     your_cards = get_cards(2)
     computer_cards = get_cards(2)
-
     your_score = calculate(your_cards)
     computer_score = calculate(computer_cards)
 
@@ -51,25 +50,22 @@ def process_winner(your_score, computer_score):
 
     will_continue = input("\nType 'y' to continue or 'n' to stop: ")
     if will_continue.lower() == 'y':
+        print("\n" * 15)
         start_game()
     else:
         print(art.goodbye)
 
 def get_cards(draw_number: int = 1):
     on_hand = []
-    for count in range(draw_number):
+    for x in range(draw_number):
         card = random.choice(list(cards))
         on_hand.append(card)
     return on_hand
 
 def calculate(on_hand_cards):
     list_of_cards = []
-    total = 0
     for on_hand in on_hand_cards:
-        try:
-            list_of_cards.append(cards[on_hand])
-        except KeyError:
-            total += 0
+        list_of_cards.append(cards[on_hand])
 
     total = sum(list_of_cards)
     if total > 21:
