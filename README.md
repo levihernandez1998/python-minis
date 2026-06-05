@@ -11,6 +11,7 @@ This repo is basically my personal sandbox where I test random ideas, build tiny
 A growing list of mini projects such as:
 
 - 🃏BLACK JACK / 21
+- 🔢GUESS THE GAME 👀🔍
 
 Each folder is self-contained and runs independently.
 
