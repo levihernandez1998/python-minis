@@ -1,6 +1,9 @@
 import art
 import random
 
+HARD_LEVEL = 5
+EASY_LEVEL = 10
+
 chosen_number = 0
 number_of_guesses = 0
 
@@ -33,9 +36,9 @@ def start():
 def get_number_of_guesses():
     difficulty = input("Choose a difficulty level ('easy' or 'hard'): ")
     if difficulty.lower() == "easy":
-        return 10
+        return EASY_LEVEL
     elif difficulty.lower() == "hard":
-        return 5
+        return HARD_LEVEL
     else:
         print("Please choose a difficulty level.")
         return 0
