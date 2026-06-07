@@ -12,6 +12,7 @@ A growing list of mini projects such as:
 
 - 🃏BLACK JACK / 21
 - 🔢GUESS THE GAME 👀🔍
+- ⬆️HIGHER or ⬇️LOWER
 
 Each folder is self-contained and runs independently.
 
