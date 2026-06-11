@@ -14,6 +14,7 @@ A growing list of mini projects such as:
 - 🔢GUESS THE GAME 👀🔍
 - ⬆️HIGHER or ⬇️LOWER
 - ☕COFFEE MACHINE
+- 🐝QUIZ BEE✨
 
 Each folder is self-contained and runs independently.
 
