@@ -15,6 +15,7 @@ A growing list of mini projects such as:
 - ⬆️HIGHER or ⬇️LOWER
 - ☕COFFEE MACHINE
 - 🐝QUIZ BEE✨
+- 🍎SNAKE GAME🐍
 
 Each folder is self-contained and runs independently.
 
