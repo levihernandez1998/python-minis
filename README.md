@@ -17,6 +17,7 @@ A growing list of mini projects such as:
 - 🐝QUIZ BEE✨
 - 🍎SNAKE GAME🐍
 - 🏓PING PONG 🏓
+- 🐢CROSSING GAME🚗
 
 Each folder is self-contained and runs independently.
 
