@@ -1,17 +1,15 @@
 from turtle import Turtle
 
+HIGHEST_SCORE = 10
+
 
 class Scoreboard(Turtle):
 
     def __init__(self):
         self.current = 0
-        self.highest = 2
+        self.highest = HIGHEST_SCORE
         super().__init__()
-        self.color('white')
-        self.penup()
-        self.hideturtle()
-        self.goto(0, 350)
-        self.show()
+        self.reset()
 
     def add(self):
         self.current += 1
@@ -32,6 +30,10 @@ class Scoreboard(Turtle):
 
     def reset(self):
         self.current = 0
+        self.color('white')
+        self.penup()
+        self.hideturtle()
+        self.goto(0, 350)
         self.show()
 
     def game_over(self):

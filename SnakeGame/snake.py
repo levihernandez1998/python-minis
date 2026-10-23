@@ -14,11 +14,9 @@ RIGHT = 0
 class Snake():
     def __init__(self):
         self.segments = []
-        self.init_snake()
-        self.head = self.segments[0]
-        self.head.color('darkgreen')
+        self.reset()
 
-    def init_snake(self):
+    def create(self):
         for position in STARTING_POSITIONS:
             self.add_segment(position)
 
@@ -28,6 +26,14 @@ class Snake():
         new_segment.penup()
         new_segment.goto(position)
         self.segments.append(new_segment)
+
+    def reset(self):
+        for segment in self.segments:
+            segment.hideturtle()
+        self.segments = []
+        self.create()
+        self.head = self.segments[0]
+        self.head.color('darkgreen')
 
     def remove_segment(self):
         self.segments[-1].hideturtle()
@@ -70,7 +76,7 @@ class Snake():
     def blink(self):
         count = 0
         ishidden = False
-        while count <= 20:
+        while count <= 6:
             for segment in self.segments:
                 if ishidden:
                     segment.showturtle()

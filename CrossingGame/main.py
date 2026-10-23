@@ -6,6 +6,7 @@ import time
 
 
 screen = Screen()
+screen.title("Crossing Game")
 screen.setup(600, 600)
 screen.tracer(0)
 
