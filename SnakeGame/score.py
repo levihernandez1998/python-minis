@@ -1,13 +1,19 @@
 from turtle import Turtle
 
-HIGHEST_SCORE = 10
+DIRECTORY = "E:\Python Practice\SnakeGame"
 
 
 class Scoreboard(Turtle):
 
     def __init__(self):
         self.current = 0
-        self.highest = HIGHEST_SCORE
+        self.highest = 0
+
+        with open(f"{DIRECTORY}\database.txt") as file:
+            database = file.read()
+            print(database)
+            self.highest = int(database)
+
         super().__init__()
         self.reset()
 
@@ -16,6 +22,9 @@ class Scoreboard(Turtle):
 
         if self.current > self.highest:
             self.highest = self.current
+
+            with open(f"{DIRECTORY}\database.txt", "w") as file:
+                file.write(str(self.highest))
 
         self.show()
 
